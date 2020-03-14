@@ -1,0 +1,49 @@
+.main {
+    margin-bottom: 100px;
+    h1 {
+        margin: 40px auto 30px 0;
+    }
+    .section {
+        margin-bottom: 20px;
+        .wrap::before {
+            content: "";
+            position: absolute;
+            background: url('../img/Rectangle8.png') no-repeat;
+            width: 100%;
+            height: 100%;
+            mix-blend-mode: multiply;
+        }
+        .wrap {
+            position: relative;
+            border: 1px solid #A1A7B1;
+            max-width: 270px;
+            margin: 0 auto;
+            .section_title {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                color: #FFFFFF;
+            }
+            button {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+                background-color: $button-yellow-color;
+                width: 140px;
+                height: 36px;
+                border: none;
+                mix-blend-mode: normal;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

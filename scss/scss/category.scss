@@ -1,0 +1,107 @@
+.category {
+    color: #333333;
+    .breadcrumb {
+        background-color: $body-color;
+        padding: 0;
+        margin-bottom: 0;
+        ul {
+            display: flex;
+            margin-left: 0;
+            margin-top: 40px;
+            margin-bottom: 0;
+            li {
+                margin-left: 30px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                a {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 16px;
+                    align-items: center;
+                    letter-spacing: 0.05em;
+                    color: $green-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    h1 {
+        margin-bottom: 30px;
+    }
+    .card {
+        border-radius: 0;
+        border: none;
+    }
+    .tile {
+        max-width: 320px;
+        border: 1px solid #A1A7B1;
+        margin: 0 auto;
+        &:hover {
+            outline: 3px solid $green-color;
+        }
+        .tile_title {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            margin: 15px 15px 20px 15px;
+            height: 64px;
+        }
+        .tile_img {
+            width: 100%;
+            margin: 20px auto;
+        }
+        .tile_buttons {
+            width: 85%;
+            margin: 20px auto;
+            button {
+                width: 100%;
+                border: none;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                color: #FFFFFF;
+                padding: 5px;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+                .fa-ruble-sign {
+                    font-size: 16px;
+                }
+            }
+            .green {
+                background-color: $button-green-color;
+            }
+            .yellow {
+                background-color: $button-yellow-color;
+            }
+        }
+    }
+    .pagination {
+        margin-bottom: 50px;
+        a {
+            text-decoration: none;
+            color: #333333;
+        }
+        .col {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            padding: 0;
+            text-align: center;
+            font-size: 20px;
+            line-height: 36px;
+        }
+        .grey {
+            border: 2px solid #C8C8C8;
+            color: #c8c8c8;
+        }
+        .green {
+            border: 2px solid $green-color;
+            &:hover {
+                background-color: $yellow-color;
+                color: #ffffff;
+            }
+        }
+    }
+}
