@@ -1,0 +1,95 @@
+.product {
+    color: #333333;
+    .product_img {
+        border: 1px solid #A1A7B1;
+        padding: 5px;
+        img {
+            width: 100%;
+        }
+    }
+    h1 {
+        margin-bottom: 40px;
+    }
+    .product_price {
+        margin-bottom: 20px;
+    }
+    .product_description {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .product_quantity {
+        margin-bottom: 25px;
+    }
+    .add_to_cart {
+        background-color: $button-yellow-color;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        width: 170px;
+        height: 31px;
+        border: none;
+    }
+    .product_main {
+        margin-bottom: 60px;
+    }
+    h2 {
+        font-weight: 300;
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .product_characteristics {
+        margin-bottom: 60px;
+        .row {
+            margin-top: 15px;
+            .col {
+                border-bottom: 1px solid #B0B0B0;
+                line-height: 0;
+            }
+            .col-auto {
+                line-height: 15px;
+                color: #000;
+                &:last-child {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .category {
+        h2 {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.product_price {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: $green-color;
+    span {
+        font-weight: bold;
+    }
+    .fa-ruble-sign {
+        font-size: 17px;
+    }
+}
+
+.product_quantity {
+    button {
+        width: 26px;
+        height: 26px;
+        border: none;
+        background-color: $button-green-color;
+        margin: 0;
+    }
+    input {
+        width: 55px;
+        margin: 0;
+        background-color: #dbdbdb;
+        border: none;
+        text-align: center;
+        outline: none;
+    }
+}

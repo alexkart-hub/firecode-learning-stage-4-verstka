@@ -1,31 +1,41 @@
-.category {
+.breadcrumb {
     color: #333333;
-    .breadcrumb {
-        background-color: $body-color;
-        padding: 0;
+    background-color: $body-color;
+    padding: 0;
+    margin-bottom: 0;
+    ul {
+        display: flex;
+        margin-left: 0;
+        margin-top: 40px;
         margin-bottom: 0;
-        ul {
-            display: flex;
-            margin-left: 0;
-            margin-top: 40px;
-            margin-bottom: 0;
-            li {
-                margin-left: 30px;
-                &:first-child {
-                    margin-left: 0;
-                }
-                a {
-                    font-weight: bold;
-                    font-size: 14px;
-                    line-height: 16px;
-                    align-items: center;
-                    letter-spacing: 0.05em;
-                    color: $green-color;
-                    text-decoration: none;
-                }
+        li {
+            margin-left: 30px;
+            &:first-child {
+                margin-left: 0;
+            }
+            a {
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 16px;
+                align-items: center;
+                letter-spacing: 0.05em;
+                color: $green-color;
+                text-decoration: none;
             }
         }
     }
+}
+
+.green {
+    background-color: $button-green-color;
+}
+
+.yellow {
+    background-color: $button-yellow-color;
+}
+
+.category {
+    color: #333333;
     h1 {
         margin-bottom: 30px;
     }
@@ -68,12 +78,6 @@
                 .fa-ruble-sign {
                     font-size: 16px;
                 }
-            }
-            .green {
-                background-color: $button-green-color;
-            }
-            .yellow {
-                background-color: $button-yellow-color;
             }
         }
     }

@@ -1,0 +1,36 @@
+@media only screen and(max-width: 991px) {
+    .cart {
+        .table {
+            .title {
+                line-height: 25px;
+            }
+            .item>div {
+                padding: 10px;
+                border-bottom: 1px solid #dddddd;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 767px) {
+    .cart {
+        .table {
+            max-width: 300px;
+            .title {
+                display: none;
+            }
+            .item {
+                border: 1px solid #dddddd;
+                margin-bottom: 10px;
+                div>div>div:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .cart_down {
+            .col-md-auto {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
