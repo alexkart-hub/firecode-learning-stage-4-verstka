@@ -1,0 +1,33 @@
+@media only screen and(max-width: 991px) {
+    .breadcrumb {
+        ul {
+            li {
+                font-size: 12px;
+                line-height: 24px;
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 767px) {
+    .product {
+        .add_to_cart {
+            margin-bottom: 20px;
+        }
+        .product_img {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and(max-width: 575px) {
+    .product {
+        .product_characteristics {
+            font-size: .9rem;
+        }
+    }
+}

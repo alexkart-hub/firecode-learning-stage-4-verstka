@@ -16,15 +16,25 @@
             border-bottom: 1px solid #B9BDC4;
             margin: 0;
             text-align: center;
+            .row {
+                height: 100%;
+            }
             &>div,
             &>div .row>div {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: center;
                 .photo_item {
                     img {
                         width: 100%;
+                        margin-top: 5px;
                     }
+                }
+                .f {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 100%;
                 }
                 .name_item {
                     font-weight: 500;
@@ -37,8 +47,10 @@
             .total_item {
                 font-weight: 300;
                 font-size: 14px;
-                line-height: 20px;
                 color: #252525;
+            }
+            .quantity_item {
+                // margin-top: 30px;
             }
             .delete_item {
                 text-align: end;

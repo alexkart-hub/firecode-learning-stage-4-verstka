@@ -2,25 +2,23 @@
     color: #333333;
     background-color: $body-color;
     padding: 0;
+    margin-top: 40px;
     margin-bottom: 0;
-    ul {
+    &>span {
         display: flex;
-        margin-left: 0;
-        margin-top: 40px;
-        margin-bottom: 0;
-        li {
-            margin-left: 30px;
-            &:first-child {
-                margin-left: 0;
-            }
-            a {
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 16px;
-                align-items: center;
-                letter-spacing: 0.05em;
-                color: $green-color;
-                text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        align-items: center;
+        a {
+            color: $green-color;
+            text-decoration: none;
+        }
+        &:not(:last-child) {
+            margin-right: 5px;
+            &::after {
+                content: ">";
+                margin-left: 5px;
             }
         }
     }

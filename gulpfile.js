@@ -12,12 +12,15 @@ var config = {
     paths: {
         scss: './scss/*.scss',
         scss_all: './scss/**/*.scss',
+        a_scss: './scss_adaptive/*.scss',
+        a_scss_all: './scss_adaptive/**/*.scss',
         html: './MyApp/index.php',
         html_all: './MyApp/**/*.html',
         img: './img/**/*.*'
     },
     output: {
         cssName: 'style.css',
+        a_cssName: 'adaptive.css',
         path: './MyApp/css',
         img: './MyApp/img/'
     }
@@ -28,6 +31,17 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(concat(config.output.cssName))
+        .pipe(autoprefixer())
+        // .pipe(cleanCss())
+        .pipe(gulp.dest(config.output.path))
+        .pipe(browerSync.stream());
+});
+
+gulp.task('a_sass', function() {
+    return gulp.src(config.paths.a_scss)
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(concat(config.output.a_cssName))
         .pipe(autoprefixer())
         // .pipe(cleanCss())
         .pipe(gulp.dest(config.output.path))
@@ -60,6 +74,7 @@ gulp.task('serve', function() {
     });
 
     gulp.watch(config.paths.scss_all, gulp.parallel('sass'));
+    gulp.watch(config.paths.a_scss_all, gulp.parallel('a_sass'));
     gulp.watch(config.paths.html, gulp.parallel('code'));
     gulp.watch(config.paths.img, gulp.parallel('image'));
 });

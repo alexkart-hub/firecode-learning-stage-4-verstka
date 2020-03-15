@@ -26,6 +26,10 @@ h1 {
     display: block;
 }
 
+.navbar-toggler {
+    outline: none !important;
+}
+
 .header {
     position: relative;
     .logo {
@@ -36,9 +40,6 @@ h1 {
     }
     .header_bottom {
         background-color: $green-color;
-    }
-    .navbar-toggler {
-        outline: none;
     }
     .navbar-toggler-icon {
         display: inline;
@@ -143,5 +144,8 @@ h1 {
     }
     .nav-link:first-child {
         font-weight: bold;
+    }
+    .fa-bars {
+        color: $green-color;
     }
 }
